@@ -63,7 +63,11 @@ button[type="submit"]:hover {
 /* SERVICES / PORTFOLIO */
 /* ========================= */
 .card-hover {
+  position: relative;
+  overflow: hidden;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 1px solid #e5e7eb !important;
+  background-color: #ffffff !important;
 }
 
 .card-hover:hover {
@@ -274,18 +278,6 @@ header {
   animation: float 6s ease-in-out infinite;
 }
 
-@keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-
-  50% {
-    transform: translateY(-20px) rotate(180deg);
-  }
-}
-
 /* Gradient animé pour le texte */
 @keyframes gradient-x {
 
@@ -305,16 +297,12 @@ header {
 }
 
 /* Effet de scan cyberpunk */
+/* Effet de scan cyberpunk (commenté car non utilisé) */
+/*
 @keyframes scan-line {
-  0% {
-    transform: translateY(-100%);
-  }
-
-  100% {
-    transform: translateY(100vh);
-  }
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
 }
-
 .scan-line {
   position: absolute;
   top: 0;
@@ -324,6 +312,7 @@ header {
   background: linear-gradient(90deg, transparent, #00ffff, transparent);
   animation: scan-line 3s linear infinite;
 }
+*/
 
 /* Effet de glitch */
 @keyframes glitch {
@@ -350,54 +339,25 @@ header {
   }
 }
 
+/* glitch-effect (commented — not used)
 .glitch-effect {
   animation: glitch 0.3s ease-in-out infinite;
 }
+*/
 
 /* Effet de néon */
-.neon-glow {
-  text-shadow:
-    0 0 5px #00ffff,
-    0 0 10px #00ffff,
-    0 0 15px #00ffff,
-    0 0 20px #00ffff;
-}
+/* .neon-glow removed (unused) */
 
 /* Effet de matrix */
-@keyframes matrix-rain {
-  0% {
-    transform: translateY(-100vh);
-  }
+/* Matrix rain & matrix-char (commented — not used)
+@keyframes matrix-rain { 0% { transform: translateY(-100vh); } 100% { transform: translateY(100vh); } }
+.matrix-char { position: absolute; color: #00ff00; font-family: 'Courier New', monospace; animation: matrix-rain 3s linear infinite; }
+*/
 
-  100% {
-    transform: translateY(100vh);
-  }
-}
-
-.matrix-char {
-  position: absolute;
-  color: #00ff00;
-  font-family: 'Courier New', monospace;
-  animation: matrix-rain 3s linear infinite;
-}
-
-/* Effet de hologramme */
-.hologram {
-  position: relative;
-  background: linear-gradient(45deg, transparent 30%, rgba(0, 255, 255, 0.1) 50%, transparent 70%);
-  background-size: 20px 20px;
-  animation: hologram-shift 2s linear infinite;
-}
-
-@keyframes hologram-shift {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: 20px 20px;
-  }
-}
+/* Hologram effect (commented — not used)
+.hologram { position: relative; background: linear-gradient(45deg, transparent 30%, rgba(0, 255, 255, 0.1) 50%, transparent 70%); background-size: 20px 20px; animation: hologram-shift 2s linear infinite; }
+@keyframes hologram-shift { 0% { background-position: 0 0; } 100% { background-position: 20px 20px; } }
+*/
 
 /* Effet de circuit */
 .circuit-pattern {
@@ -407,26 +367,10 @@ header {
   background-size: 20px 20px;
 }
 
-/* Effet de data stream */
-@keyframes data-stream {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(100vw);
-  }
-}
-
-.data-stream {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #00ffff, transparent);
-  animation: data-stream 2s linear infinite;
-}
+/* Data stream (commented — not used)
+@keyframes data-stream { 0% { transform: translateX(-100%); } 100% { transform: translateX(100vw); } }
+.data-stream { position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, transparent, #00ffff, transparent); animation: data-stream 2s linear infinite; }
+*/
 
 /* Effet de loading cyberpunk */
 .cyber-loader {
