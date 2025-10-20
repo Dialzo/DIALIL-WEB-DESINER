@@ -242,6 +242,8 @@ header {
 /* Effet de glassmorphism */
 .glass-effect {
   background: rgba(255, 255, 255, 0.1);
+  /* Safari support */
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -617,6 +619,8 @@ svg {
 
 /* Amélioration de la navigation */
 nav {
+  /* Safari support */
+  -webkit-backdrop-filter: blur(10px) !important;
   backdrop-filter: blur(10px) !important;
   background-color: rgba(255, 255, 255, 0.95) !important;
   border-bottom: 2px solid #e5e7eb !important;
@@ -670,6 +674,8 @@ nav a:hover {
 /* Mobile menu */
 #mobileMenu {
   background-color: rgba(255, 255, 255, 0.95) !important;
+  /* Safari support */
+  -webkit-backdrop-filter: blur(10px) !important;
   backdrop-filter: blur(10px) !important;
   border-top: 2px solid #e5e7eb !important;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
